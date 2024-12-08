@@ -18,15 +18,31 @@ config
 })
 .addSwitch({
     category: "Mobs",
+    subcategory: "Crimson Isle",
     configName: "visualizeThunder",
     title: "Visualize Thunder Lootshare radius",
     description: "Visualizes a 30 block wide sphere around Thunder"
 })
 .addSwitch({
     category: "Mobs",
+    subcategory: "Crimson Isle",
     configName: "visualizeJawbus",
     title: "Visualize Lord Jawbus Lootshare radius",
     description: "Visualizes a 30 block wide sphere around Lord Jawbus"
+})
+.addSwitch({
+    category: "Mobs",
+    subcategory: "Winter Island",
+    configName: "visualizeYeti",
+    title: "Visualize Yeti Lootshare radius",
+    description: "Visualizes a 30 block wide sphere around Yeti"
+})
+.addSwitch({
+    category: "Mobs",
+    subcategory: "Winter Island",
+    configName: "visualizeReindrake",
+    title: "Visualize Reindrake Lootshare radius",
+    description: "Visualizes a 30 block wide sphere around Reindrake"
 })
 
 const setting = new Settings("LsRadius", config, "data/scheme-nwjn.json") // make sure to set your command with [.setCommand("commandname")]

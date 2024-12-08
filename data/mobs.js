@@ -18,6 +18,22 @@ if(Settings().visualizeJawbus) {
     )
 }
 
+if(Settings().visualizeYeti) {
+    Entities.push(
+        {
+            name: "Yeti"
+        }
+    )
+}
+
+if(Settings().visualizeReindrake) {
+    Entities.push(
+        {
+            name: "Reindrake"
+        }
+    )
+}
+
 //Entities.push(
 //    {
 //        name: "Magma Slug"
