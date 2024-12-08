@@ -20,10 +20,8 @@ function getEntities() {
         entities.push({ name: "Reindrake" });
     }
 
-    //if(settings.visualizeMagmaSlug) {
-    //    entities.push({ name: "Magma Slug" });
-    //}
-
+    //entities.push({ name: "Magma Slug" });
+    
     return entities;
 }
 

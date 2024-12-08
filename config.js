@@ -12,9 +12,26 @@ config
 })
 .addSwitch({
     category: "Main",
+    subcategory: "Visuals",
     configName: "visualizeRadius",
     title: "Visualize Lootshare Radius",
     description: "Visualizes a 30 block wide sphere around the mob"
+})
+.addSwitch({
+    category: "Main",
+    subcategory: "Visuals",
+    configName: "lavaFinder",
+    title: "LavaFinder",
+    description: "Visualizes 2 deep lava spots"
+})
+.addSlider({
+    category: "Main",
+    subcategory: "Visuals",
+    configName: "lavaFinderRadius",
+    title: "LavaFinder Radius",
+    description: "Radius to search for 2 deep lava",
+    options: [1, 20],
+    value: 10
 })
 .addSwitch({
     category: "Mobs",
