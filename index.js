@@ -1,6 +1,6 @@
 import RenderLibV2 from "../RenderLibV2";
 import Settings from "./config";
-import Entities from "./data/mobs";
+import getEntities from "./data/mobs";
 
 register("command", () => {
     Settings().getConfig().openGui()
@@ -18,7 +18,7 @@ register("tick", () => {
         const name = entity?.getName();
         const plainName = name?.removeFormatting();
 
-        if (plainName.includes("❤") && Entities.some(m => plainName.includes(m.name))) {
+        if (plainName.includes("❤") && getEntities().some(m => plainName.includes(m.name))) {
             if(mobs.includes(entity)) return;
             mobs.push(entity);
         }
